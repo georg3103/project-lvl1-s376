@@ -2,9 +2,7 @@
   "name": "pr-lvl1-s376-app",
   "version": "1.0.3",
   "description": "brain-games",
-  "main": "index.js",
   "scripts": {
-    "babel-node": "babel-node",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
