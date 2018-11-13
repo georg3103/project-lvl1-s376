@@ -2,5 +2,5 @@
 
 import { sayHello, askName } from '..';
 
-askName();
 sayHello();
+askName();
