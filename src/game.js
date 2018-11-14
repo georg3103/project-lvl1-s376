@@ -7,7 +7,7 @@ const playRound = (generateFn) => {
   const correctAnswer = tail(gameData);
 
   console.log(`Question: ${question}`);
-  const userAnswer = readlineSync.question('Your answer: ').toLowerCase(); 
+  const userAnswer = readlineSync.question('Your answer: ').toLowerCase();
   const isCorrect = userAnswer === correctAnswer;
   if (isCorrect) {
     console.log('Correct!');
