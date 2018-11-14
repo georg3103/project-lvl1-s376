@@ -5,3 +5,7 @@
 <a href="https://codeclimate.com/github/georg3103/project-lvl1-s376/test_coverage"><img src="https://api.codeclimate.com/v1/badges/f716d178651457101329/test_coverage" /></a>
 
 [![Build Status](https://travis-ci.org/georg3103/project-lvl1-s376.svg?branch=master)](https://travis-ci.org/georg3103/project-lvl1-s376)
+
+# Brain-even
+<a href="https://asciinema.org/a/dkn71XAVdPWMWgVlZGdYBvglm" target="_blank"><img src="https://asciinema.org/a/dkn71XAVdPWMWgVlZGdYBvglm.svg" /></a>
+
