@@ -9,3 +9,6 @@
 # Brain-even
 <a href="https://asciinema.org/a/dkn71XAVdPWMWgVlZGdYBvglm" target="_blank"><img src="https://asciinema.org/a/dkn71XAVdPWMWgVlZGdYBvglm.svg" /></a>
 
+# Brain-calc
+<a href="https://asciinema.org/a/nsk6am9xEA3b8whcgfwxShFE2" target="_blank"><img src="https://asciinema.org/a/nsk6am9xEA3b8whcgfwxShFE2.svg" /></a>
+
