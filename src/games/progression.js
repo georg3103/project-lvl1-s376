@@ -15,7 +15,7 @@ const makeProgression = (start, increment, sign, randomIndex) => {
     }
   }
   return cons(progression, answer);
-}
+};
 
 const description = 'Find the greatest common divisor of given numbers.';
 const signOptionsArr = ['+', '-'];
