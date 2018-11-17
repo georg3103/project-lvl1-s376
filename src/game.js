@@ -19,9 +19,9 @@ const playRound = (generateFn) => {
   return isCorrect;
 };
 
-const playGame = (gameDescription, generateFn) => {
+const playGame = (descriptionription, generateFn) => {
   console.log('\nWelcome to the Brain Games!');
-  console.log(gameDescription);
+  console.log(descriptionription);
 
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
@@ -35,7 +35,4 @@ const playGame = (gameDescription, generateFn) => {
   console.log(`Congratulations, ${userName} !\n`);
 };
 
-export {
-  playRound,
-  playGame,
-};
+export default playGame;
