@@ -1,22 +1,18 @@
-import { cons, car, cdr } from 'hexlet-pairs';
+import { cons } from 'hexlet-pairs';
 import getRandomNum from '../utils';
 import playGame from '../game';
 
-const progressionLength = 10;
-
-const makeProgression = (start, increment, hiddenElementIndex) => {
+const makeProgression = (start, increment, hiddenElementIndex, progressionLength) => {
   let progression = '';
-  let answer;
   for (let i = 0; i < progressionLength; i += 1) {
     const item = `${start + increment * i} `;
     if (i === hiddenElementIndex) {
       progression += '.. ';
-      answer = start + increment * i;
     } else {
       progression += item;
     }
   }
-  return cons(progression, answer);
+  return progression;
 };
 
 const description = 'Find the greatest common divisor of given numbers.';
@@ -25,9 +21,10 @@ const generateGame = () => {
   const start = getRandomNum(1, 100);
   const increment = getRandomNum(-10, 10);
   const hiddenElementIndex = getRandomNum(1, 10);
-  const gameData = makeProgression(start, increment, hiddenElementIndex);
-  const question = car(gameData);
-  const answer = cdr(gameData);
+  const progressionLength = 10;
+  const gameData = makeProgression(start, increment, hiddenElementIndex, progressionLength);
+  const question = gameData;
+  const answer = start + increment * hiddenElementIndex;
 
   return cons(question, String(answer));
 };
