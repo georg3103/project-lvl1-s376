@@ -9,7 +9,7 @@ const description = 'Find the greatest common divisor of given numbers.';
 const generateGame = () => {
   const firstNum = getRandomNum(1, 100);
   const secondNum = getRandomNum(1, 100);
-  const question = `Question: ${firstNum} ${secondNum}`;
+  const question = `${firstNum} ${secondNum}`;
   const answer = gcd(firstNum, secondNum);
 
   return cons(question, String(answer));
