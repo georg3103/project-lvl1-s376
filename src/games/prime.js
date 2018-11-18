@@ -3,15 +3,11 @@ import getRandomNum from '../utils';
 import playGame from '../game';
 
 const isPrime = (num) => {
-  if (num > 0) {
-    for (let i = 2; i < num; i += 1) {
-      if (num % i === 0) {
-        return false;
-      }
-    }
-    return num !== 1 && num !== 0;
+  if (num < 0) return false;
+  for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) {
+    if (num % i === 0) return false;
   }
-  return false;
+  return num !== 1 && num !== 0;
 };
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
