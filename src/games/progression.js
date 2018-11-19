@@ -20,8 +20,8 @@ const description = 'Find the greatest common divisor of given numbers.';
 const generateGame = () => {
   const start = getRandomNum(1, 100);
   const increment = getRandomNum(-10, 10);
-  const hiddenElementIndex = getRandomNum(1, 10);
   const progressionLength = 10;
+  const hiddenElementIndex = getRandomNum(1, progressionLength);
   const gameData = makeProgression(start, increment, hiddenElementIndex, progressionLength);
   const question = gameData;
   const answer = start + increment * hiddenElementIndex;
